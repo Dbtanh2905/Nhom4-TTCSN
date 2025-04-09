@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobazar - Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+        }
+
+        .topbar,
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: #f9f9f9;
+        }
+
+        .navbar {
+            background: #111;
+            color: white;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: green;
+            font-weight: 600;
+        }
+
+        .banner {
+            background-image: url(logo.jpg.jpg);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+            background: #111;
+            color: white;
+        }
+
+
+        .banner .text {
+            flex: 1;
+        }
+
+        .filters,
+        .sort-bar {
+            display: flex;
+            gap: 10px;
+            padding: 10px 20px;
+            flex-wrap: wrap;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #eee;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: contain;
+        }
+
+        .stars {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topbar">
+        <span>Store Location: Lincoln - 344, Illinois, Chicago, USA</span>
+        <div style="margin-left:auto;">Shopping Cart: $57.00</div>
+    </div>
+
+    <div class="navbar">
+        <div class="logo">Ecobazar</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Pages</a>
+            <a href="#">Blog</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="text">
+            <h2>Sale of the Month</h2>
+            <p>Best deals — 56% OFF</p>
+            <p>00 : 02 : 18 : 46</p>
+            <button
+                style="padding:10px 20px;background:green;color:white;border:none;border-radius:5px;cursor:pointer;">Shop
+                Now</button>
+        </div>
+    </div>
+
+    <div class="filters">
+        <select>
+            <option>Select Category</option>
+        </select>
+        <select>
+            <option>Select Price</option>
+        </select>
+        <select>
+            <option>Select Rating</option>
+        </select>
+    </div>
+
+    <div class="sort-bar">
+        <select>
+            <option>Sort by: Latest</option>
+        </select>
+        <select>
+            <option>Show: 18</option>
+        </select>
+    </div>
+
+    <div class="products">
+        <div class="product">
+            <img src="logo.jpg.jpg" alt="Red Chili">
+            <h4>Red Chili</h4>
+            <p>$14.99</p>
+            <div class="stars">★★★★☆</div>
+        </div>
+        <div class="product">
+            <img src="logo.jpg.jpg" alt="Big Potatoes">
+            <h4>Big Potatoes</h4>
+            <p>$14.99</p>
+            <div class="stars">★★★★☆</div>
+        </div>
+        <div class="product">
+            <img src="logo.jpg.jpg" alt="Chansie Cabbage">
+            <h4>Chansie Cabbage</h4>
+            <p>$14.99</p>
+            <div class="stars">★★★★☆</div>
+        </div>
+        <div class="product">
+            <img src="logo.jpg.jpg" alt="Ladies Finger">
+            <h4>Ladies Finger</h4>
+            <p>$14.99</p>
+            <div class="stars">★★★★☆</div>
+        </div>
+        <div class="product">
+            <img src="logo.jpg.jpg" alt="Red Tomato">
+            <h4>Red Tomato</h4>
+            <p>$14.99</p>
+            <div class="stars">★★★★☆</div>
+        </div>
+        <div class="product">
+            <img src="logo.jpg.jpg" alt="Eggplant">
+            <h4>Eggplant</h4>
+            <p>$14.99</p>
+            <div class="stars">★★★★☆</div>
+        </div>
+        <div class="product">
+            <img src="logo.jpg.jpg" alt="Fresh Cauliflower">
+            <h4>Fresh Cauliflower</h4>
+            <p>$14.99</p>
+            <div class="stars">★★★★☆</div>
+        </div>
+        <div class="product">
+            <img src="logo.jpg.jpg" alt="Green Apple">
+            <h4>Green Apple</h4>
+            <p>$14.99</p>
+            <div class="stars">★★★★☆</div>
+        </div>
+    </div>
+</body>
+
+</html>
